@@ -8,6 +8,6 @@ mkdir -p raw
 pushd raw >/dev/null
 for f in $files
 do
-  wget $url/$f
+  curl -O $url/$f
 done
 popd >/dev/null
