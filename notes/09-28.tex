@@ -13,29 +13,30 @@ Given a group G and a set S, an action of G on S is a rule that assigns
 to each pair (g,s) in G x S an element t of S, usually denoted gs, such
 that 1s = s for all s in S, where i is the identity element of G and
 h(gs) = (hg)s for g,h in G, s in S. (More precisely, this defines a
-*left* action of G on S; had we written sg for the action of the element
-g on the element s, the natural axiom would have been (sg)h = s(gh);
-this defines a *right* action). It is not difficult to verify that a
-left action of G on S is equivalent to a homomorphism $\pi$ from G to
-ther permutation group Perm(S) of all bijections from S to S, where we
-decree that $\pi(g)(s) = gs$, where gs is the action of g on s. If G
-acts on S and s is an element of S, then the set of g in G such that gs
-= s is an important subgroup of G, called the *stabilizer* of s and
-denoted $G^s$. Likewise, we have an important subset Gs of S, defined to
-be the set of all gs as g runs through G and called the orbit of s. If
-$H = G^s$, then it is easy to check that any two elements of the same
-left coset gH of H in G map s to the same element, and in fact two
-elements of G map s to the same element if and only if they lie in the
-same left coset of H in G. If G is finite, it follows by Lagrange's
-Theorem (which I assume you have seen) that the order |G| of G equals
-the product of the orders $|G^s||Gs|$ of the orders of the orbit and
-stabilizer of any s in S: this important formula, called the Orbit
-Formula, will be used constantly in this course (and beyond). If the set
-S has only one G-orbit, then we call the G-action on it {\sl
-  transitive}; in this case we can of course replace the orbit Gs in the
-Orbit Formula by the entire set S. In general, no two orbits of G in S
-can overlap, so another useful formula, if S is finite, is that its
-order equals the sum of the orders of the orbits in it.
+\textbf{left} action of G on S; had we written sg for the action of the
+element g on the element s, the natural axiom would have been (sg)h =
+s(gh); this defines a \textbf{right} action). It is not difficult to
+verify that a left action of G on S is equivalent to a homomorphism
+$\pi$ from G to ther permutation group Perm(S) of all bijections from S
+to S, where we decree that $\pi(g)(s) = gs$, where gs is the action of g
+on s. If G acts on S and s is an element of S, then the set of g in G
+such that gs = s is an important subgroup of G, called the
+\textbf{stabilizer} of s and denoted $G^s$. Likewise, we have an
+important subset Gs of S, defined to be the set of all gs as g runs
+through G and called the orbit of s. If $H = G^s$, then it is easy to
+check that any two elements of the same left coset gH of H in G map s to
+the same element, and in fact two elements of G map s to the same
+element if and only if they lie in the same left coset of H in G. If G
+is finite, it follows by Lagrange's Theorem (which I assume you have
+seen) that the order |G| of G equals the product of the orders
+$|G^s||Gs|$ of the orders of the orbit and stabilizer of any s in S:
+this important formula, called the Orbit Formula, will be used
+constantly in this course (and beyond). If the set S has only one
+G-orbit, then we call the G-action on it {\sl transitive}; in this case
+we can of course replace the orbit Gs in the Orbit Formula by the entire
+set S. In general, no two orbits of G in S can overlap, so another
+useful formula, if S is finite, is that its order equals the sum of the
+orders of the orbits in it.
 
 An important but all too rarely seen example occurs when G is a finite
 subgroup of $SO_3$; that is, a finite group of 3 x 3 real matrices M of
