@@ -43,14 +43,15 @@ semidirect product of $N$ and $H$. Whenever a group $G$ has a normal
 subgroup $N$ and another subgroup $H$ such that $G = NH$ and $H$ and $N$
 intersect trivially, then $G$ can always be viewed as the semidirect
 product of $N$ and $H$. In our current example, the full automorphism
-group of the cyclic group $Z_q$ of order $q$ is known to be itself
-cyclic of order $q-1$ (we will learn this later) and so admits a cyclic
-subgroup of order $p$ whenever $p$ divides $q-1$, which can be used to
-define a nontrivial action of the cyclic group $Z_p$ of order $p$ on
-$Z_q$ by automorphisms. The upshot is that {\sl any group of order $pq$
-  with $p,q$ distinct primes is cyclic if neither of $p,q$ is congruent
-  to 1 mod the other, but a nonabelian group of order $pq$ exists
-  whenever $p,q$ are distinct primes with $q$ congruent to 1 mod $p$}.
+group of the cyclic group $\mathbf{Z}_q$ of order $q$ is known to be
+itself cyclic of order $q-1$ (we will learn this later) and so admits a
+cyclic subgroup of order $p$ whenever $p$ divides $q-1$, which can be
+used to define a nontrivial action of the cyclic group $\mathbf{Z}_p$ of
+order $p$ on $\mathbf{Z}_q$ by automorphisms. The upshot is that {\sl
+  any group of order $pq$ with $p,q$ distinct primes is cyclic if
+  neither of $p,q$ is congruent to 1 mod the other, but a nonabelian
+  group of order $pq$ exists whenever $p,q$ are distinct primes with $q$
+  congruent to 1 mod $p$}.
 
 Sometimes the Sylow theorems force one of the Sylow subgroups to be
 normal, but don't tell us which one it is (because either one can be).
@@ -79,19 +80,19 @@ We look at one more example, without proving it in detail. Let $G$ be a
 simple group of order 168. As above we see that it must have exactly 8
 7-Sylow subgroups; it acts on the set of these by conjugation. This time
 however $G$ is much too small to act by all even permutations on 8
-elements. To pin down its structure, start with the set $Z_7$ of
-integers mod 7 and add a new element $\infty$ (infinity), calling the
-resulting set $P=\mathbb P^1(Z_7)$. For $a,b,c,d\in Z_7$ with $ad-bc=1$,
-define the fraction $(az + b)/(cz + d)$ for z in $P$ by decreeing it to
-be $a/c$ if $z=\infty$ and $c$ is not 0; while it is $\infty$ if $c=0$
-(note that then $a$ cannot be 0). Analogously, define $(az+b)/(cz+d)$ to
-be $\infty$ if its numerator is 0 (since then its denominator cannot be
-0). The set of all maps sending $z\in P$ to $(az+b)/(cz+d)$ forms a
-group under composition, called the group of linear fractional
-transformations. This group is isomorphic to the quotient $PSL(2,Z_7)$
-of 2 x 2 matrices over $Z_7$ of determinant 1, modulo the scalar
-matrices $\pm1$; the order of this group is 168, as desired. Then it
-turns out (though we will not prove this) that $G$ is necessarily
-isomorphic to this group.
+elements. To pin down its structure, start with the set $\mathbf{Z}_7$
+of integers mod 7 and add a new element $\infty$ (infinity), calling the
+resulting set $P=\mathbb P^1(\mathbf{Z}_7)$. For $a,b,c,d\in
+\mathbf{Z}_7$ with $ad-bc=1$, define the fraction $(az + b)/(cz + d)$
+for z in $P$ by decreeing it to be $a/c$ if $z=\infty$ and $c$ is not 0;
+while it is $\infty$ if $c=0$ (note that then $a$ cannot be 0).
+Analogously, define $(az+b)/(cz+d)$ to be $\infty$ if its numerator is 0
+(since then its denominator cannot be 0). The set of all maps sending
+$z\in P$ to $(az+b)/(cz+d)$ forms a group under composition, called the
+group of linear fractional transformations. This group is isomorphic to
+the quotient $PSL(2,\mathbf{Z}_7)$ of 2 x 2 matrices over $\mathbf{Z}_7$
+of determinant 1, modulo the scalar matrices $\pm1$; the order of this
+group is 168, as desired. Then it turns out (though we will not prove
+this) that $G$ is necessarily isomorphic to this group.
 
 \end{document}
