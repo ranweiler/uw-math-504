@@ -198,3 +198,5 @@ TSWLatexianTemp*
 
 # macOS
 .DS_Store
+
+src/*.pdf
