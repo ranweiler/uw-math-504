@@ -2,7 +2,7 @@
 set -eu -o pipefail
 
 url='http://www.math.washington.edu/~mcgovern/504au16'
-files='9-28.tex 9-30.tex 10-3.tex 10-5.tex 10-7.tex 10-10.tex HW10-5.tex HW10-14.tex HW10-21.tex'
+files=$(curl "${url}/" 2>/dev/null | pcregrep -o1 '<a.*>(.*tex)</a>')
 
 mkdir -p raw
 pushd raw >/dev/null
