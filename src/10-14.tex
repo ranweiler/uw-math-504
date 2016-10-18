@@ -44,8 +44,8 @@ occur whose orders are powers of the same prime $p$, lest there be too
 many solutions to $x^{p^k}= 1$ for some $k$, so the cyclic factors have
 relatively prime orders and their product is again cyclic. Since there
 are always at most $m$ solutions to $x^m = 1$ in any field $K$, it
-follows that {\sl any finite subgroup of the multiplicative group $K^*$
-  of a field is cyclic}. In particular, $\mathbf{Z_p}^*$ is always
+follows that {\sl any finite subgroup of the multiplicative group $K*$
+  of a field is cyclic}. In particular, $\mathbf{Z}_p^*$ is always
 cyclic, as mentioned in class last week. Next, as in class, take
 $R=K[x]$ and let $V$ be a finite-dimensional vector space over $K$
 equipped with a linear transformation from $V$ to $V$. We make $V$ into
@@ -61,26 +61,29 @@ column $-a_0,\ldots,-a_{n-1}$ and zeroes elsewhere. We call this matrix
 the {\sl companion matrix} $C(q)$ of $q$; it has minimal and
 characteristic polynomials both equal to $q$ (up to sign). In general,
 the matrix of $T$ with respect to a suitable basis of $V$ will be block
-diagonal with blocks equal to the companion matrices attached to various
-powers of monic irreducible polynomials over $K$; this form is unique
-apart from reordering the blocks. If the characteristic polynomial of
-$T$ happens to have all roots in $K$ (which it always does if for
-example $K$ is algebraically closed, so that all polynomials over it
-have a full complement of roots in it), then the powers of polynomials
-arising in this way all take the form $(x-a_i)^{n_i}$. In this case one
-generally chooses a different basis for each block, namely the powers
-$(x-a_i)^{n_i-1},\ldots,x-a_i,1$ and the corresponding matrix has
-$a_i$'s on the diagonal, ones above it, and zeroes everywhere else. Such
-a matrix is called a {\sl Jordan block} and the {\sl Jordan canonical
-  form} of a square matrix realizes it as similar to a block diagonal
-matrix with the blocks all Jordan blocks (possibly with different
-eigenvalues). In particular, {\sl there are only finitely many
-  similarity classes of $n\times n$ matrices having just one eigenvalue
-  $a$}, for any such matrix $M$ is similar to one in Jordan form with
-$a$'s on the diagonal and so is determined by its size; the sizes
-involved are a set of positive integers adding to $n$. Such unordered
-sets of positive integers summing to $n$ are called {\sl partitions} of
-$n$ and have a rich mathematical theory; they have been studied for more
-than two and a half centuries.
+diagonal with blocks equal to the companion matrices attached to powers
+of monic irreducible polynomials over $K$; this form is unique apart
+from reordering the blocks. It is called the {\sl rational canonical
+  form of $T$} (or of any of its matrices). The minimal polynomial of
+$T$ is then the least common multiple of the polynomials whose companion
+matrices furnish the blocks of its rational canonical form. If the
+characteristic polynomial of $T$ happens to have all roots in $K$ (which
+it always does if for example $K$ is algebraically closed, so that all
+polynomials over it have a full complement of roots in it), then the
+powers of polynomials arising in this way all take the form
+$(x-a_i)^{n_i}$. In this case one generally chooses a different basis
+for each block, namely the powers $(x-a_i)^{n_i-1},\ldots,x-a_i,1$ and
+the corresponding matrix has $a_i$'s on the diagonal, ones above it, and
+zeroes everywhere else. Such a matrix is called a {\sl Jordan block} and
+the {\sl Jordan canonical form} of a square matrix realizes it as
+similar to a block diagonal matrix with the blocks all Jordan blocks
+(possibly with different eigenvalues). In particular, {\sl there are
+  only finitely many similarity classes of $n\times n$ matrices having
+  just one eigenvalue $a$}, for any such matrix $M$ is similar to one in
+Jordan form with $a$'s on the diagonal and so is determined by its size;
+the sizes involved are a set of positive integers adding to $n$. Such
+unordered sets of positive integers summing to $n$ are called {\sl
+  partitions} of $n$ and have a rich mathematical theory; they have been
+studied for more than two and a half centuries.
 
 \end{document}
