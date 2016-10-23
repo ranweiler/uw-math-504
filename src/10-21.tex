@@ -1,0 +1,94 @@
+\documentclass[10pt]{article}
+\usepackage{amsmath, amssymb}
+
+\begin{document}
+
+\section*{Math 504, 10/21}
+
+We now look at sequences of modules linked by homomorphisms. Given a
+sequence of $R$-modules $\cdots\rightarrow M\rightarrow N\rightarrow
+P\rightarrow\cdots$, each one sent to the next by an $R$-module map, we
+say that it is {\sl exact at $N$} if the image of the ($R$-module) map
+from $M$ to $N$ equals the kernel of the map from $N$ to $P$. The
+sequence is {\sl exact} if it is exact at all of its terms, except
+possibly those, if any, on the extreme ends. The most important kind of
+exact sequence is a {\sl short exact sequence} $0\rightarrow
+N\rightarrow M\rightarrow P\rightarrow 0$; note that such a sequence is
+exact if and only if the map $f$ from $N$ to $M$ is injective, the map
+$g$ from $M$ to $P$ is surjective, and the image of $f$ equals the
+kernel of $g$ (so that $P\cong M/N$, identifying $N$ with its image
+under $f$ in $M$). Such sequences are the basic object of study of {\sl
+  homological algebra}, which plays a key role in algebraic topology;
+one of the aims of this course is give an introduction to this subject.
+The short exact sequence $0\rightarrow N\rightarrow M\rightarrow
+P\rightarrow 0$ is said to be {\sl split} if there is a submodule $P'$
+of its middle term $M$ mapping isomorphically onto $P$ via the map from
+$M$ to $P$, so that $M$ is the direct sum of the image of $N$ in it and
+$P'$. We will be looking at important operations, called {\sl functors},
+which take $R$-modules to $R$-modules; our first such operation fixes an
+$R$-module $M$ and sends an arbitrary $R$-module $N$ to the set
+Hom$_R(M,N)$ of $R$-module maps from $M$ to $N$; note that Hom$_R(M,N)$
+is also an $R$-module in a natural way. Given a sequence $M_1\rightarrow
+M_2\rightarrow M_3\rightarrow\cdots$ of $R$-modules and our fixed
+$R$-module $M$, we get a sequence
+Hom$_R(M,M_1)\rightarrow\,$Hom$_R(M,M_2)\rightarrow\cdots$ by
+composition; accordingly, we call the functor sending each $M_i$ to
+Hom$_R(M,M_i)$ (often denoted Hom$_R(M,--)$) {\sl covariant}, since the
+directions of the arrows are preserved. (If they were reversed instead,
+as they will be in some subsequent examples, then we call the functor
+{\sl contravariant}). Our first question is whether the covariant
+functor Hom$_R(M,--)$ sends one short exact sequence to another one.
+Given a short exact sequence $0\rightarrow A\rightarrow B\rightarrow
+C\rightarrow 0$, our functor yields the sequence
+$0\rightarrow\,\,$Hom$_R(M,A)\rightarrow\,\,$Hom$_R(M,B)\rightarrow\,\,$
+Hom$_R(M,C)\rightarrow0$. Here the map $f$ from
+Hom$_R(M,A)\rightarrow\,\,$Hom$_R(M,B)$ is indeed injective, since $A$
+embeds in $B$, and the map from Hom$_R(M,B)$ to Hom$_R(M,C)$ does indeed
+have as kernel the image of Hom$_R(M,A)$ in Hom$_R(M,B)$, but the map
+from Hom$_R(M,B)$ to Hom$_R(M,C)$ need {\sl not} be surjective; for
+example, if $R=\mathbf{Z}, M = \mathbf{Z}_2$, and $A,B,C$ are
+respectively $\mathbf{Z}, \mathbf{Z}$, and $\mathbf{Z}_2$, with the map
+from $A$ to $B$ sending an integer $x$ to $2x$, then the map from
+Hom$(\mathbf{Z}_2,\mathbf{Z})$ to Hom$(\mathbf{Z}_2, \mathbf{Z}_2)$ is
+not surjective, as there are no nonzero homomorphisms from
+$\mathbf{Z}_2$ to $\mathbf{Z}$, but there is a nonzero homomorphism from
+$\mathbf{Z}_2$ to $\mathbf{Z}_2$. Thus the first four terms of our
+original exact sequence $0\rightarrow A\rightarrow B\rightarrow
+C\rightarrow 0$ remain exact after applying Hom$_R(M,--)$, but the full
+sequence does not. We summarize this situation by saying that the
+functor Hom$_R(M,--)$ is {\sl left exact}, but not {\sl right exact}. On
+the other hand, there are some modules $P$ over some rings $R$ for which
+this functor is {\sl exact}, preserving the full short exact sequence we
+started out with. This will happen if and only if any $R$-module map $f$
+from $P$ to another module $N$ will always {\sl lift} in the sense that,
+given a module $M$ and a surjection $g$ from another $R$-module $M$ onto
+$N$, there is a map $f'$ from $P$ to $N$ with $f= gf'$. We call such
+$R$-modules {\sl projective} (over $R$); unfortunately this has nothing
+to do with projective geometry or projective space (or the projective
+special linear group $PSL_n$) that arise in other contexts. For example,
+if $P$ is free over $R$, then the lift $f'$ always exists: let
+$p_1,p_2,\ldots$ be a basis of $P$ and choose preimages $m_1,m_2,\ldots$
+of the images $f(p_i)$ in $M$, so that $g(m_i) = f(p_i)$, and then take
+$f'$ to be the unique $R$-module map from $P$ to $M$ sending each $p_i$
+to $m_i$. More generally, if $P$ is a direct summand of a free module
+$F$, so that $F\cong P\oplus Q$, then again the lift $f'$ exists: extend
+$f$ to a map from $F$ to $N$ by decreeing that it be 0 on $Q$, and then
+lift it as above. In fact, it turns out that {\sl the projective
+  $R$-modules are exactly the direct summands of free $R$-modules}; to
+see this, let $P$ be projective over $R$ and let $F$ be a free module
+surjecting onto $P$; we know that such an $F$ exists. Then the identity
+map from $P$ to itself must lift to $F$, so that there is a map
+$f:P\rightarrow F$ such that composing $f$ with the surjection from $F$
+to $P$ is the identity on $P$. This says exactly that $F$ is the direct
+sum of the image $f(P)$ in it and the kernel of the surjection from $F$
+to $P$, so that $P$ is (isomorphic to) a direct summand of a free
+module, as claimed. Note that although the free module $R^n$ is given to
+us as the direct sum of $n$ copies of $R$, there could be other ways to
+write $R^n$ as a direct sum and accordingly projective $R$-modules that
+are not free. The simplest example occurs when $R = \mathbf{Z}_6$: here
+$R$ decomposes as the direct sum of its submodules generated by $3,2$,
+which are isomorphic to $\mathbf{Z}_2,\mathbf{Z}_3$, respectively. Hence
+$\mathbf{Z}_2$ and $\mathbf{Z}_3$ are projective over $\mathbf{Z}_6$
+(but clearly not free).
+
+\end{document}
