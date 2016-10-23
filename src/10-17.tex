@@ -51,15 +51,15 @@ deck of cards, leaving just 32 cards. Encode each card in the deck by a
 (spades=00, hearts=(01), diamonds=(10), clubs=(11). Now arrange the
 32-card deck so that the $i$th card from the top is the one encoded by
 the $i$th 5-bit subsequence. Thus the first card, encoded by 00001, is
-the ace of spades; the next one, encoded by 00010, is the ace of hearts,
-and so on. The resulting order of cards will seem completely random to
-anyone who examines the deck, but you can essentially memorize it,
-working out in your head what the card following any given one is, by
-applying the recurrence $b_n = b_{n-3} + b_{n-5}$. Thus you can use this
-deck to \lq\lq prove" that you have ESP, announcing in advance what the
-order of the cards in it will be. This trick can be adapted to any deck
-(not necessarily one of ordinary playing cards) whose size is any power
-$2^k$ of 2, provided only that one can encode the cards by $k$-bit
+the ace of hearts; the next one, encoded by 00010, is the ace of
+diamonds, and so on. The resulting order of cards will seem completely
+random to anyone who examines the deck, but you can essentially memorize
+it, working out in your head what the card following any given one is,
+by applying the recurrence $b_n = b_{n-3} + b_{n-5}$. Thus you can use
+this deck to \lq\lq prove" that you have ESP, announcing in advance what
+the order of the cards in it will be. This trick can be adapted to any
+deck (not necessarily one of ordinary playing cards) whose size is any
+power $2^k$ of 2, provided only that one can encode the cards by $k$-bit
 sequences; one uses the existence of a field of order $2^k$ (which we
 will prove later) to construct the required deBruijn sequence.
 
