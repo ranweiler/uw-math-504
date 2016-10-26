@@ -31,65 +31,65 @@ and maps in question), so it has a maximal element $(\tilde A,\tilde
 f)$, which by the first part of the argument last time must be defined
 on all of $B$. Thus $M$ is injective over $R$, as desired.
 
-So far we have studied the functors Hom$_R(M,--)$ and Hom$_R(--,M)$ in
-some detail, for a fixed $R$-module $M$; the first is covariant and the
-second is contravariant, while both are left but not right exact in
-general. We now look at the other operation we have learned this term,
-namely the tensor product. The functor $M\otimes_R --$ is a covariant
-one for any fixed $R$-module $M$: any map $f$ from $N$ to $P$ induces
-one from $M\otimes_R N$ to $M\otimes_R P$, sending a tensor $m\otimes n$
-to $m\otimes f(n)$. This time this functor is right but not left exact;
-if we have a short exact sequence $0\rightarrow A\rightarrow
-B\rightarrow C\rightarrow 0$, then the induced map from $M\otimes_R B$
-to $M\otimes_R C$ is surjective (since the tensors $m\otimes c$ for
-$c\in C$ generate $M\otimes_R C$ as an abelian group), and has kernel
-exactly the image of $M\otimes_R A$ in $M\otimes_R B$ (since an explicit
-inverse to the map from $M\otimes_R B$ modulo this image to $M\otimes_R
-C$ is given by mapping a tensor $m\otimes c$ to $m\otimes b$, where $b$
-is any preimage of $c$ for the map from $B$ to $C$), but the map from
-$M\otimes_R A$ to $M\otimes_R B$ need not be injective. The simplest
-example, analogous to one given earlier for projectivity, has $R=\Bbb Z,
-M=\Bbb Z_2,A=B=\Bbb Z,C=\Bbb Z_2$ with the map from $A$ to $B$ sending
-an integer $x$ to $2x$. Here the induced map from $M\otimes A$ to
-$M\otimes B$ sends $m\times a$ to $m\otimes 2a = 2m\otimes a = 0$, so
-this map is 0. The notion corresponding to projectivity or injectivity
-in this setting is called {\sl flatness}: an $R$-module $M$ is flat if
-given any injective map $f:A\rightarrow B$ of $R$-modules, the induced
-map $1\otimes f$ sending $m\otimes a$ to $m\otimes f(a)$ is injective.
-Fortunately there is a close connection between projectivity and
-flatness: {\sl any projective $R$-module is flat}. To see this first
-note that tensor products commute with direct sums; the tensor product
-$(M\oplus N)\otimes_R P$ is isomorphic to $M\otimes_R P\oplus N\otimes
-P$, since a bilinear map from $(M\oplus N) \times P$ to another
-$R$-module is completely determined by its restrictions to $M\times P$
-and $N\times P$, which must be bilinear. Thus tensoring an $R$-module
-$M$ with a free $R$-module amounts to replacing $M$ by the sum of $r$
-copies of itself, $r$ the rank of the free module (since $R\otimes_R
-M\cong M$) and so is exact; similarly tensoring $R$-modules with a
-direct summand of a free module is exact. For a different example, {\sl
-  $\Bbb Q$ is a flat $\Bbb Z$-module}. To see this, we need to give a
-different construction of $\Bbb Q\otimes_{\Bbb Z} M$ for a $\Bbb
-Z$-module $M$, generalizing the construction of the field of fractions
-of an integral domain. Given $M$, let $M'=\Bbb Z*^{-1} M$, the {\sl
-  localization of $M$ at $\Bbb Z*$, consist by definition of all ordered
-  pairs $(u,m)$ with $u\in\Bbb Z*, m\in M$. Identify any two pairs
-  $(u_1,m_1)$ and $(u_2,m_2)$ whenever there is a nonzero integer u with
-  $u(u_1 m_2 - u_2 m_1) = 0$. One checks that this relation is
-  reflexive, symmetric and transitive, so is an equivalence relation;
-  the proof of transitivity requires the element $u$ and would not work
-  if the condition for $(u_1,m_1) = (u_2,m_2)$ were just $u_1 m_2 - u_2
-  m_1 = 0$. Then one checks that $M'$ is isomorphic to $\Bbb
-  Q\otimes_{\Bbb Z} M$, the isomorphism sending $(u,m)$ to
-  $u^{-1}\otimes m$. Now let $M\subset N$ be any $\Bbb Z$-modules. The
-  construction of the tensor product shows that any element of $\Bbb
-  Q\otimes_{\Bbb Z} M$ may be written as $(1/d)\otimes m$ for some $m\in
-  M$. If the induced map from $\Bbb Q\otimes_{\Bbb Z} M$ to $\Bbb
-  Q\otimes_{\Bbb Z} N$ had a nonzero kernel $K$, containing say
-  $(1/d)\otimes m$, then our localization construction would show that
-  $cm = 0$ for some $c\in\Bbb Z*$; but then $(1/d)\otimes m$ is already
-  0 in $\Bbb Q\otimes_{\Bbb Z} M$. Hence $K=0$, as claimed. More
-  generally, {\sl the field of fractions of any integral domain $R$ is a
-    flat $R$-module}.
+So far we have studied the functors Hom$_R(M,\text{--})$ and
+Hom$_R(\text{--},M)$ in some detail, for a fixed $R$-module $M$; the
+first is covariant and the second is contravariant, while both are left
+but not right exact in general. We now look at the other operation we
+have learned this term, namely the tensor product. The functor
+$M\otimes_R \text{--}$ is a covariant one for any fixed $R$-module $M$:
+any map $f$ from $N$ to $P$ induces one from $M\otimes_R N$ to
+$M\otimes_R P$, sending a tensor $m\otimes n$ to $m\otimes f(n)$. This
+time this functor is right but not left exact; if we have a short exact
+sequence $0\rightarrow A\rightarrow B\rightarrow C\rightarrow 0$, then
+the induced map from $M\otimes_R B$ to $M\otimes_R C$ is surjective
+(since the tensors $m\otimes c$ for $c\in C$ generate $M\otimes_R C$ as
+an abelian group), and has kernel exactly the image of $M\otimes_R A$ in
+$M\otimes_R B$ (since an explicit inverse to the map from $M\otimes_R B$
+modulo this image to $M\otimes_R C$ is given by mapping a tensor
+$m\otimes c$ to $m\otimes b$, where $b$ is any preimage of $c$ for the
+map from $B$ to $C$), but the map from $M\otimes_R A$ to $M\otimes_R B$
+need not be injective. The simplest example, analogous to one given
+earlier for projectivity, has $R=\Bbb Z, M=\Bbb Z_2,A=B=\Bbb Z,C=\Bbb
+Z_2$ with the map from $A$ to $B$ sending an integer $x$ to $2x$. Here
+the induced map from $M\otimes A$ to $M\otimes B$ sends $m\times a$ to
+$m\otimes 2a = 2m\otimes a = 0$, so this map is 0. The notion
+corresponding to projectivity or injectivity in this setting is called
+{\sl flatness}: an $R$-module $M$ is flat if given any injective map
+$f:A\rightarrow B$ of $R$-modules, the induced map $1\otimes f$ sending
+$m\otimes a$ to $m\otimes f(a)$ is injective. Fortunately there is a
+close connection between projectivity and flatness: {\sl any projective
+  $R$-module is flat}. To see this first note that tensor products
+commute with direct sums; the tensor product $(M\oplus N)\otimes_R P$ is
+isomorphic to $M\otimes_R P\oplus N\otimes P$, since a bilinear map from
+$(M\oplus N) \times P$ to another $R$-module is completely determined by
+its restrictions to $M\times P$ and $N\times P$, which must be bilinear.
+Thus tensoring an $R$-module $M$ with a free $R$-module amounts to
+replacing $M$ by the sum of $r$ copies of itself, $r$ the rank of the
+free module (since $R\otimes_R M\cong M$) and so is exact; similarly
+tensoring $R$-modules with a direct summand of a free module is exact.
+For a different example, {\sl $\Bbb Q$ is a flat $\Bbb Z$-module}. To
+see this, we need to give a different construction of $\Bbb
+Q\otimes_{\Bbb Z} M$ for a $\Bbb Z$-module $M$, generalizing the
+construction of the field of fractions of an integral domain. Given $M$,
+let $M'=\Bbb Z*^{-1} M$, the {\sl localization of $M$ at $\Bbb Z*$,
+  consist by definition of all ordered pairs $(u,m)$ with $u\in\Bbb Z*,
+  m\in M$. Identify any two pairs $(u_1,m_1)$ and $(u_2,m_2)$ whenever
+  there is a nonzero integer u with $u(u_1 m_2 - u_2 m_1) = 0$. One
+  checks that this relation is reflexive, symmetric and transitive, so
+  is an equivalence relation; the proof of transitivity requires the
+  element $u$ and would not work if the condition for $(u_1,m_1) =
+  (u_2,m_2)$ were just $u_1 m_2 - u_2 m_1 = 0$. Then one checks that
+  $M'$ is isomorphic to $\Bbb Q\otimes_{\Bbb Z} M$, the isomorphism
+  sending $(u,m)$ to $u^{-1}\otimes m$. Now let $M\subset N$ be any
+  $\Bbb Z$-modules. The construction of the tensor product shows that
+  any element of $\Bbb Q\otimes_{\Bbb Z} M$ may be written as
+  $(1/d)\otimes m$ for some $m\in M$. If the induced map from $\Bbb
+  Q\otimes_{\Bbb Z} M$ to $\Bbb Q\otimes_{\Bbb Z} N$ had a nonzero
+  kernel $K$, containing say $(1/d)\otimes m$, then our localization
+  construction would show that $cm = 0$ for some $c\in\Bbb Z*$; but then
+  $(1/d)\otimes m$ is already 0 in $\Bbb Q\otimes_{\Bbb Z} M$. Hence
+  $K=0$, as claimed. More generally, {\sl the field of fractions of any
+    integral domain $R$ is a flat $R$-module}.
 
 So far we have worked with modules over a commutative ring $R$.
 Everything that we did can be duplicated word for word for left modules
