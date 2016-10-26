@@ -32,38 +32,38 @@ Hom$_S(B\otimes_R A,C)\cong\,$Hom$_R(A,$Hom$_S(B,C))$
 
 and again a homomorphism $f$ on the left is sent to the homomorphism
 taking $a\in A$ to the map sending $b\in B$ to $f(b\otimes a)$. We apply
-this map in the special case where our ring $S$ is the integers $\Bbb Z,
-B=R, A=N$ is a left $R$-module, and $C=Q$ is an injective $\Bbb
+this map in the special case where our ring $S$ is the integers $\mathbf
+Z, B=R, A=N$ is a left $R$-module, and $C=Q$ is an injective $\mathbf
 Z$-module containing the left $R$-module $M$ (whose existence you showed
 in homework this week). Then we have
 
-Hom$_{\Bbb Z}(R\otimes_R N,Q) \cong\,$Hom$_{\Bbb
-  Z}(N,Q)\cong\,$Hom$_R(N,$Hom$_{\Bbb Z} (R,Q))$
+Hom$_{\mathbf Z}(R\otimes_R N,Q) \cong\,$Hom$_{\mathbf
+  Z}(N,Q)\cong\,$Hom$_R(N,$Hom$_{\mathbf Z} (R,Q))$
 
-and since the functor taking $N$ to Hom$_{\Bbb Z}(N,Q)$ is exact, so too
-is the functor taking $N$ to Hom$_R(N,$Hom$_{\Bbb Z}(R,Q))$. Hence
-Hom$_{\Bbb Z}(R,Q)$ is an injective left $R$-module. It contains
-Hom$_R(R,M)\cong M$, as desired. Whew! This argument is a real workout
-in manipulating the formalism surrounding Hom and the tensor product,
-but it is well worth studying in detail, as ultimately such formalism is
-much more efficient than applying the definition of injective module
-directly. To summarize again, it shows that {\sl any left module over
-  any ring $R$ embeds in an injective one}. Given a left $R$-module $M$,
-there is in fact in a precise sense a unique smallest injective
-$R$-module containing $M$, called its {\sl injective hull}, but I will
-not pursue its construction here (you can read about it in \S10.5 of
-Dummit and Foote). The corresponding object on the projective side is
-called the {\sl projective cover}, but it does not exist in the category
-of general $R$-modules, though it does in certain restricted
-subcategories of this one. Another example of the interplay between
-projectivity and injectivity is the observation that {\sl direct sums of
-  porjective modules are projective, while direct products of injective
-  modules are injective}; this holds because given any collection of
-$R$-modules $M_i$ and another $R$-module $M$, any set of homomorphisms
-from $M_i$ to $M$ (one for each $i$) induces a unique homomorphism from
-the direct sum of the $M_i$ to $M$, while any set of homomorphisms from
-$M$ to $M_i$ induces one from $M$ to the direct product of the $M_i$. In
-the language of category theory, direct sums are called products, while
-direct products are called coproducts.
+and since the functor taking $N$ to Hom$_{\mathbf Z}(N,Q)$ is exact, so
+too is the functor taking $N$ to Hom$_R(N,$Hom$_{\mathbf Z}(R,Q))$.
+Hence Hom$_{\mathbf Z}(R,Q)$ is an injective left $R$-module. It
+contains Hom$_R(R,M)\cong M$, as desired. Whew! This argument is a real
+workout in manipulating the formalism surrounding Hom and the tensor
+product, but it is well worth studying in detail, as ultimately such
+formalism is much more efficient than applying the definition of
+injective module directly. To summarize again, it shows that {\sl any
+  left module over any ring $R$ embeds in an injective one}. Given a
+left $R$-module $M$, there is in fact in a precise sense a unique
+smallest injective $R$-module containing $M$, called its {\sl injective
+  hull}, but I will not pursue its construction here (you can read about
+it in \S10.5 of Dummit and Foote). The corresponding object on the
+projective side is called the {\sl projective cover}, but it does not
+exist in the category of general $R$-modules, though it does in certain
+restricted subcategories of this one. Another example of the interplay
+between projectivity and injectivity is the observation that {\sl direct
+  sums of porjective modules are projective, while direct products of
+  injective modules are injective}; this holds because given any
+collection of $R$-modules $M_i$ and another $R$-module $M$, any set of
+homomorphisms from $M_i$ to $M$ (one for each $i$) induces a unique
+homomorphism from the direct sum of the $M_i$ to $M$, while any set of
+homomorphisms from $M$ to $M_i$ induces one from $M$ to the direct
+product of the $M_i$. In the language of category theory, direct sums
+are called products, while direct products are called coproducts.
 
 \end{document}
