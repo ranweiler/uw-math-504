@@ -32,33 +32,35 @@ are Ext groups. It also turns out that the groups Ext$_R^i(M,N)$ do not
 depend on our choice of projective resolution of $M$. We now give some
 examples.
 
-Suppose first that $R = \Bbb Z, M = \Bbb Z_n$. Then a projective
+Suppose first that $R = \mathbf Z, M = \mathbf Z_n$. Then a projective
 resolution of $M$ is given by $0\rightarrow\cdots\rightarrow
-0\rightarrow\Bbb Z\rightarrow\Bbb Z\rightarrow\Bbb Z_n\rightarrow 0$,
-where the map from $\Bbb Z$ to $\Bbb Z$ is multiplication by $n$; in
-effect this is a finite resolution. Taking Ext groups, we find that
-Ext$_{\Bbb Z}^0(M,N)$ consists of all homomorphisms from $\Bbb Z$ to $N$
-vanishing on multiples of $n$, or equivalently homomorphisms from $\Bbb
-Z_n$ to $N$, while Ext$_{\Bbb Z}^1(M,N)$ is $\hom(\Bbb Z,N)$ modulo
-$\hom(n\Bbb Z,N)$, which is isomorphic to $N/nN$. The higher Ext groups
-Ext$_{\Bbb Z}^i(M,N)$ are 0 (for $i\ge2$). For a more interesting, but
-more complicated example, take $R = \Bbb Z_n, M = \Bbb Z_d$, where $d$
-is a divisor of $n$, say $n=dm$. Now a projective resolution of $M$ is
-given by $\cdots\Bbb Z_n\rightarrow\Bbb Z_n\rightarrow\cdots\rightarrow
-Z_n\rightarrow Z_d\rightarrow 0$, where the maps from one copy of $\Bbb
-Z_n$ to the next are alternately given by multiplying by $m$ and
-multiplying by $d$, the rightmost map from $\Bbb Z_n$ to $\Bbb Z_n$ is
-multiplication by $d$, and the map from $\Bbb Z_n$ to $\Bbb Z_d$is the
-canonical one (thought of as multiplication by $m$). Here we have
-Ext$_{\Bbb Z_n}^0(\Bbb Z_d,N) = \hom(\Bbb Z_d,N)$ (as before; this is a
-general fact holding for left modules over any ring $R$), but now the
-other Ext groups toggle: Ext$_{\Bbb Z_n}^i(\Bbb Z_d,N) = {}_m M/dM$ if
-$i$ is odd, where ${}_m M$ denotes $\{x\in M: mx = 0\}$, while
-Ext$_{\Bbb Z_n}^i(\Bbb Z_d,N) = {}_d M/mM$ if $i$ is even. Many Ext
-groups exhibit this periodic behavior; many others vanish in high
-degrees, as we saw in the first example. We also see from these two
-examples that Ext$_R(M,N)$ depends on $R$ as well as $M$ and $N$, as
-indicated by the notation.
+0\rightarrow\mathbf Z\rightarrow\mathbf Z\rightarrow\mathbf
+Z_n\rightarrow 0$, where the map from $\mathbf Z$ to $\mathbf Z$ is
+multiplication by $n$; in effect this is a finite resolution. Taking Ext
+groups, we find that Ext$_{\mathbf Z}^0(M,N)$ consists of all
+homomorphisms from $\mathbf Z$ to $N$ vanishing on multiples of $n$, or
+equivalently homomorphisms from $\mathbf Z_n$ to $N$, while
+Ext$_{\mathbf Z}^1(M,N)$ is $\hom(\mathbf Z,N)$ modulo $\hom(n\mathbf
+Z,N)$, which is isomorphic to $N/nN$. The higher Ext groups
+Ext$_{\mathbf Z}^i(M,N)$ are 0 (for $i\ge2$). For a more interesting,
+but more complicated example, take $R = \mathbf Z_n, M = \mathbf Z_d$,
+where $d$ is a divisor of $n$, say $n=dm$. Now a projective resolution
+of $M$ is given by $\cdots\mathbf Z_n\rightarrow\mathbf
+Z_n\rightarrow\cdots\rightarrow Z_n\rightarrow Z_d\rightarrow 0$, where
+the maps from one copy of $\mathbf Z_n$ to the next are alternately
+given by multiplying by $m$ and multiplying by $d$, the rightmost map
+from $\mathbf Z_n$ to $\mathbf Z_n$ is multiplication by $d$, and the
+map from $\mathbf Z_n$ to $\mathbf Z_d$is the canonical one (thought of
+as multiplication by $m$). Here we have Ext$_{\mathbf Z_n}^0(\mathbf
+Z_d,N) = \hom(\mathbf Z_d,N)$ (as before; this is a general fact holding
+for left modules over any ring $R$), but now the other Ext groups
+toggle: Ext$_{\mathbf Z_n}^i(\mathbf Z_d,N) = {}_m M/dM$ if $i$ is odd,
+where ${}_m M$ denotes $\{x\in M: mx = 0\}$, while Ext$_{\mathbf
+  Z_n}^i(\mathbf Z_d,N) = {}_d M/mM$ if $i$ is even. Many Ext groups
+exhibit this periodic behavior; many others vanish in high degrees, as
+we saw in the first example. We also see from these two examples that
+Ext$_R(M,N)$ depends on $R$ as well as $M$ and $N$, as indicated by the
+notation.
 
 More generally, as noted above, Ext$_R^0(M,N)\cong\hom_R(M,N)$ for any
 $R$-modules $M,N$ and any ring $R$. If $R$ is a PID and $M$ is finitely
