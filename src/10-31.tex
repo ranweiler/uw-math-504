@@ -8,7 +8,7 @@
 Continuing where we left off last time, let $M,N$ be left $R$-modules.
 Last time we constructed a projective resolution of $M$: $\cdots
 P_n\cdots\rightarrow P_0 \rightarrow M\rightarrow 0$; applying
-$\hom(--,N)$ and omitting the first term, we have a sequence
+$\hom(\text{--},N)$ and omitting the first term, we have a sequence
 $0\rightarrow\hom(P_0,N)\rightarrow\hom(P_1,N)\rightarrow\cdots$ which
 is such that if we let $d_i$ denote the map from $\hom(P_i,N)$ to
 $\hom(P_{i+1},N)$, then $d_{i+1} d_i = 0$. We call such a sequence $C$ a
@@ -23,14 +23,14 @@ $R$-module.) Here \lq\lq Ext" should be thought of as standing for
 \lq\lq extension"; it turns out that Ext$_R^1(M,N)$ measures extensions
 of $M$ by $N$, that is, all short exact sequences $0\rightarrow
 N\rightarrow P\rightarrow M\rightarrow 0$ of $R$-modules (up to an
-equivalence defined later). We call the functors Ext$_R^i(--,N)$( {\sl
-  higher (right) derived functors of $\hom$}, since the functor
-$\hom(--,N)$ is left but not right exact; we will later see that a short
-exact sequence of $R$-modules gives rise to a long exact sequence whose
-first three nonzero terms are $\hom$ groups and whose remaining terms
-are Ext groups. It also turns out that the groups Ext$_R^i(M,N)$ do not
-depend on our choice of projective resolution of $M$. We now give some
-examples.
+equivalence defined later). We call the functors Ext$_R^i(\text{--},N)$(
+{\sl higher (right) derived functors of $\hom$}, since the functor
+$\hom(\text{--},N)$ is left but not right exact; we will later see that
+a short exact sequence of $R$-modules gives rise to a long exact
+sequence whose first three nonzero terms are $\hom$ groups and whose
+remaining terms are Ext groups. It also turns out that the groups
+Ext$_R^i(M,N)$ do not depend on our choice of projective resolution of
+$M$. We now give some examples.
 
 Suppose first that $R = \mathbf Z, M = \mathbf Z_n$. Then a projective
 resolution of $M$ is given by $0\rightarrow\cdots\rightarrow
@@ -76,12 +76,12 @@ of $M$? To answer this, we begin by noting that, given an $R$-module map
 $f$ from $M$ to $N$ and projective resolutions$\{P_i\}$ and $\{Q_i\}$ of
 $M,N$, respectively, an easy inductive argument yields maps
 $f_i:P_i\rightarrow Q_i$ making the obvious diagram combining the two
-resolutions commute; applying $\hom_R(--,P)$ to this diagram, we get a
-map from Ext$_R^i(M,P)$ to Ext$_R^i(N,P)$ (so that Ext$_R^i(--,P)$ is
-indeed a covariant functor). Using something you will construct in
-homework called a {sl cochain homotopy}, you will show that the induced
-map on Ext groups is always 0 if $f=0$; whence it will follow that any
-two projective resolutions of $M$ give rise to isomorphic Ext groups
-with a fixed module $N$.
+resolutions commute; applying $\hom_R(\text{--},P)$ to this diagram, we
+get a map from Ext$_R^i(M,P)$ to Ext$_R^i(N,P)$ (so that
+Ext$_R^i(\text{--},P)$ is indeed a covariant functor). Using something
+you will construct in homework called a {sl cochain homotopy}, you will
+show that the induced map on Ext groups is always 0 if $f=0$; whence it
+will follow that any two projective resolutions of $M$ give rise to
+isomorphic Ext groups with a fixed module $N$.
 
 \end{document}
