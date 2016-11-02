@@ -1,0 +1,95 @@
+\documentclass[10pt]{article}
+\usepackage{amsmath, amssymb}
+
+\begin{document}
+
+\section*{Math 504, 11/02}
+
+Continuing from last time, we have learned that Ext$_R^i(--,N)$ is a
+contravariant functor from left $R$-modules to abelian groups, while
+Ext$_R^i(M,--)$ is a covariant functor from $R$-modules to abelian
+groups. Attached to any short exact sequence $0\rightarrow A\rightarrow
+B\rightarrow C\rightarrow 0$ of left $R$-modules and another $R$-module
+$M$, it turns out that we now get a {\sl long} exact sequence
+$0\rightarrow
+\hom_R(C,M)\rightarrow\hom_R(B,M\rightarrow\hom_R(A,M)\rightarrow\,$
+Ext$_R^1(C,M)\rightarrow\,$Ext$_R^1(B,M)\rightarrow\,$Ext$_R^1(A,M)\rightarrow\,$
+Ext$_R^2((C,M)\rightarrow\,$Ext$_R^2(B,M)\rightarrow\cdots$ which fills
+out the subshort exact sequence of its first four terms that we saw
+earlier with Ext groups. We have a similar long exact sequence obtained
+by reversing the order of $A,B,C$ and inserting the $M$ as the first
+argument in the $\hom$ and Ext groups. Finally, starting with the
+projective resolution $\{P_i\}$ of $M$ we can tensor with a fixed {\sl
+  right} $R$-module $N$ to obtain a chain complex (just like a cochain
+complex, but this time ending rather than starting with 0)
+$\{P_i\otimes_R N\}$ of abelian groups, whose homology (so-called rather
+than cohomology, this being a chain complex rather than a cochain
+complex) groups are called Tor groups and denoted Tor$^R_i(M,N)$. These
+are again independent of the choice of projective resolution of $M$ and
+the functors Tor$^R_i(M,--)$ and Tor$^R_i(--,N)$ are both covariant
+(from $R$-modules to abelian groups). As $\otimes_R$ is now right but
+not left exact, the version of the long exact sequence attached to the
+short exact sequence $0\rightarrow A\rightarrow B\rightarrow
+C\rightarrow 0$ is now
+$\cdots\,$Tor$^R_1(M,A)\rightarrow\,$Tor$^R_1(M,B)\rightarrow\,$Tor$^R_1(M,C)\rightarrow
+M\otimes_R A\rightarrow M\otimes B\rightarrow M\otimes C\rightarrow 0$
+where $A,B,C$ are left $R$-modules and $M$ is a right $R$-module. I hope
+to prove the existence and develop more properties of these long exact
+sequences later; for now I move on to (I hope) easier material.
+
+Let $G$ be a group. I will be discussing $G$-modules (vector spaces $V$
+over a field $K$ equipped with a {\sl linear} $G$-action, so that
+$g\cdot (v_1 + v_2) = g\cdot v_1 + g\cdot v_2$ and $g\cdot (kv) =
+kg\cdot v$, for all $g\in G, v_1,v_2,v\in V, k\in K$. I usually write
+$gv$ instead of $g\dot v$. When I discussed group actions on finite sets
+earlier, I observed that an action of $G$ on a finite set $S$ is
+equivalent to a homomorphism from $G$ to the group Perm$(S)$ of all
+permutations of $S$; in a similar manner, given a $G$-module $V$ we get
+a homomorphism $\pi$ from $G$ to the general linear group $GL(V)$ of all
+$1-1$ linear maps from $V$ onto itself. I will assume henceforth that
+$V$ is finite-dimensional over $K$ and that $G$ is finite, though I may
+look at a few examples where $G$ is infinite later. Either the vector
+space $V$ or the homomorphism $\pi$ is often called a {\sl
+  representation} of $G$ (as it represents the abstract elements of $G$
+by concrete square matrices). Let's look at a couple of examples. If $G$
+is the group of quaternion units, let $H$ be the quaternions (real
+linear combinations of $1,i,j,k$, where $\pm i,j,k$ multiply in the same
+way as for the quaternion units). Then $H$ ic a vector space over the
+complex numbers $\Bbb C$, where the complex scalars act on $H$ by {\sl
+  right} multiplication. Then $G$ acts on $H$ by left multiplication.
+Fixing the basis $i,j$ of $H$, we find that the matrices $I,J$ by which
+$i,j$ act on $H$ are given by $\begin{pmatrix} i&0// 0&
+  -i// \end{pmatrix}$, $\begin{pmatrix} 0&-1\\ 1&0\\ \end{pmatrix}$,
+respectively. Another way to make $G$ act linearly, this time on $\Bbb
+C$, is to decree that $\pm 1,\pm i$ act trivially, while $\pm j,\pm k$
+act by $-1$.
+
+ A $G$-homomorphism between two $G$-modules $V,W$ is a $K$-linear map
+ $\pi$ from $V$ to $W$ such that $\pi g(v) = g\pi(v)$ (i.e. $\pi$
+ commutes with the action of $G$). If $\pi$ is an isomorphism (in the
+ usual sense of being $1-1$ and onto) then we call the modules (or
+ representations) $V$ and $W$ {\sl equivalent}. The $G$-module $V$ is
+ called {\sl simple} or {\sl irreducible} if its only submodules (in the
+ obvious sense) are 0 and $V$. The key result in the study of simple
+ $R$-modules, where $R$ is a ring, is Schur's Lemma (which you will
+ prove in homework this week); in order to apply it in our setting, we
+ need to realize our $G$-modules $V$ as modules over a suitable ring. To
+ that end, we from the {\sl group algebra} $KG$, consisting by
+ definition of all finite formal sums $\sum_{g\in G} k_g g$, where the
+ $k_g$ lie in $G$. It is clear (by linearity) what $(\sum_g k_g g)v$
+ should be, for any $v\in V,k_g\in K$, namely $\sum_g k_g gv$, making
+ this definition, we realize $V$ as a left $KG$-module as desired. (Note
+ that $KG$ is not commutative as a ring unless $G$ is abelian as a
+ group.) Clearly the $KG$-submodules of $V$ are the same as the
+ $G$-submodules, so $V$ is irreducible over $G$ if and only if it is so
+ over $KG$. The nicest behavior occurs when $K=\Bbb C$, the complex
+ numbers, or more generally any algebraically closed field of
+ characteristic 0. Here for example if $G$ is cyclic of order $n$, then
+ we get a family of irreducible one-dimensional representations of $G$
+ by decreeing that a fixed generator $g$ of $G$ act by the complex
+ scalar $e^{2\pi ik/n}$, where $k$ lies between 0 and $n-1$. This family
+ turns out to account for all the irreducible representations of $G$;
+ note that these would not be available to us if we worked over $\Bbb
+ R$, as crucial $n$-th roots of 1 would be missing.
+
+\end{document}
