@@ -5,29 +5,29 @@
 
 \section*{Math 504, 11/07}
 
-Let $G$ be a finite group. We have now seen that $R=\Bbb CG$, the
+Let $G$ be a finite group. We have now seen that $R=\mathbf CG$, the
 complex group algebra of $G$, is isomorphic as a ring to a direct sum of
-matrix rings $M_{n_i}(\Bbb C)$ over $\Bbb C$. Up to isomorphism, every
-irreducible left $R$-module takes the form $\Bbb C^{n_i}$ for some $i$,
-where the summand $M_{n_i}(\Bbb C)$ of $R$ acts on $\Bbb C^{n_i}$ by
-left multiplication, while the other matrix ring summands act by 0. We
-call $R$ the {\sl regular representation of $G$} and we observe (as in
-the last lecture) that each irreducible $G$-module $M=\Bbb C^{n_i}$
-appears exactly $\dim M = n_i$ times in $R$. Now we want to compute how
-many nonisomorphic irreducible modules $R$ has. We do so in a rather
-sneaky way, by computing in two different ways the dimension of the
-center $C$ of $R$ over $\Bbb C$. On the one hand, any element of $C$
-acts (as an $R$-bimodule homomorphism) by a complex scalar on the
-minimal two-sided ideals of $R$, which are irreducible as $R$-bimodules,
-so $C$ is a direct sum of copies of $\Bbb C$, one for each ideal summand
-of $R$, or equivalently one for every distinct irreducible
-representation of $G$. On the other hand, a direct examination of a
-typical element $x=sum_g k_g g$ of $R$ shows that it lies in $C$ if and
-only if $hx = xh$ for all $h\in G$, or if and only if $hxh^{-1} = x$ for
-all $h\in G$, or if and only if $k_g = k_{g'}$ whenever the group
-elements $g,g'$ are conjugate in $G$. Hence the dimension of $C$ over
-$\Bbb C$ equals the number of conjugacy classes in $G$, and this is the
-number of distinct irreducible $G$-modules.
+matrix rings $M_{n_i}(\mathbf C)$ over $\mathbf C$. Up to isomorphism,
+every irreducible left $R$-module takes the form $\mathbf C^{n_i}$ for
+some $i$, where the summand $M_{n_i}(\mathbf C)$ of $R$ acts on $\mathbf
+C^{n_i}$ by left multiplication, while the other matrix ring summands
+act by 0. We call $R$ the {\sl regular representation of $G$} and we
+observe (as in the last lecture) that each irreducible $G$-module
+$M=\mathbf C^{n_i}$ appears exactly $\dim M = n_i$ times in $R$. Now we
+want to compute how many nonisomorphic irreducible modules $R$ has. We
+do so in a rather sneaky way, by computing in two different ways the
+dimension of the center $C$ of $R$ over $\mathbf C$. On the one hand,
+any element of $C$ acts (as an $R$-bimodule homomorphism) by a complex
+scalar on the minimal two-sided ideals of $R$, which are irreducible as
+$R$-bimodules, so $C$ is a direct sum of copies of $\mathbf C$, one for
+each ideal summand of $R$, or equivalently one for every distinct
+irreducible representation of $G$. On the other hand, a direct
+examination of a typical element $x=sum_g k_g g$ of $R$ shows that it
+lies in $C$ if and only if $hx = xh$ for all $h\in G$, or if and only if
+$hxh^{-1} = x$ for all $h\in G$, or if and only if $k_g = k_{g'}$
+whenever the group elements $g,g'$ are conjugate in $G$. Hence the
+dimension of $C$ over $\mathbf C$ equals the number of conjugacy classes
+in $G$, and this is the number of distinct irreducible $G$-modules.
 
 In particular, if $G=A$ is abelian, say of order $n$, then $A$ has $n$
 conjugacy classes, each consisting of a single element, and accordingly
@@ -43,14 +43,15 @@ an irreducible representation of $A$; so we have all of them. As another
 example, if $G=S_3$, the symmetric group on three letters, then we know
 that $G$ has a two-dimensional irreducible representation (realized by
 looking at the action of $G$ on an equilateral triangle centered at
-$(0,0)$ in $\Bbb C^2$ via symmetries of this triangle. This
-representation is irreducible as there is no line in $\Bbb C^2$ that it
-preserves. Besides this representation we have the trivial one on $\Bbb
-C$, where all elements of $G$ act trivially, and the sign representation
-on $\Bbb C$, where even permutations act by 1, odd ones by $-1$. The sum
-of the squares of the dimensions of these representations is $4+1+1= 6$,
-so again we have all of the irreducible representations. There are three
-of them, matching the number of conjugacy classes in $G$.
+$(0,0)$ in $\mathbf C^2$ via symmetries of this triangle. This
+representation is irreducible as there is no line in $\mathbf C^2$ that
+it preserves. Besides this representation we have the trivial one on
+$\mathbf C$, where all elements of $G$ act trivially, and the sign
+representation on $\mathbf C$, where even permutations act by 1, odd
+ones by $-1$. The sum of the squares of the dimensions of these
+representations is $4+1+1= 6$, so again we have all of the irreducible
+representations. There are three of them, matching the number of
+conjugacy classes in $G$.
 
 Now an obvious question is how to construct irreducible representations
 of $G$, particularly if $G$ is large. This is difficult to do directly,
@@ -63,31 +64,31 @@ a matrix, but it turns out for most $\pi$ that $\det(\pi(g)) = 1$ for
 all $g\in G$, so that it does not give useful information about $\pi$.
 Accordingly, we call the trace tr~$\pi(g)$ the {\sl character} of $\pi$,
 regarded as a complex-valued function on $G$, and denote it by
-$\chi_\pi$. Since the matrices $\pi(g)$ have finite order in $GL_n(\Bbb
-C)$ for some $n$, each is diagonalizable with eigenvalues all $m$th
-roots of 1 in $\Bbb C$ for some $m$ (in fact we may take $m= | G |$, the
-order of $G$). A consequence is that $\chi_\pi(g^{-1} =
+$\chi_\pi$. Since the matrices $\pi(g)$ have finite order in
+$GL_n(\mathbf C)$ for some $n$, each is diagonalizable with eigenvalues
+all $m$th roots of 1 in $\mathbf C$ for some $m$ (in fact we may take
+$m= | G |$, the order of $G$). A consequence is that $\chi_\pi(g^{-1} =
 \overline{\chi_\pi(g)}$, the complex conjugate of $\chi_\pi(g)$, since
 the eigenvalues of $\pi(g^{-1})$ are the inverses of the eigenvalues of
-$\pi(g)$, and each such eigenvalue lies on the unit circle in $\Bbb C$.
-(In fact, since the map $g\rightarrow\pi(g^{-1})^t$ is a homomorphism of
-$G$ into $GL_n(\Bbb C)$ whenever $\pi$ is, where the superscript $t$
-denotes transpose, we see that $\overline{\chi_{\pi}}$ is the character
-of a representation whenever $\chi_\pi$ is.) Furthermore, since the
-trace of two similar matrices is always the same, the function
-$\chi_\pi$ is constant on conjugacy classes of $G$. The number of such
-classes, as we saw above, equals the number of distinct irreducible
-representations of $G$; we will see later that the characters of
-$\chi_\pi$ of the distinct irreducible representations of $G$ form a
-basis for the space of all complex-valued functions on $G$ that are
-constant on conjugacy classes.
+$\pi(g)$, and each such eigenvalue lies on the unit circle in $\mathbf
+C$. (In fact, since the map $g\rightarrow\pi(g^{-1})^t$ is a
+homomorphism of $G$ into $GL_n(\mathbf C)$ whenever $\pi$ is, where the
+superscript $t$ denotes transpose, we see that $\overline{\chi_{\pi}}$
+is the character of a representation whenever $\chi_\pi$ is.)
+Furthermore, since the trace of two similar matrices is always the same,
+the function $\chi_\pi$ is constant on conjugacy classes of $G$. The
+number of such classes, as we saw above, equals the number of distinct
+irreducible representations of $G$; we will see later that the
+characters of $\chi_\pi$ of the distinct irreducible representations of
+$G$ form a basis for the space of all complex-valued functions on $G$
+that are constant on conjugacy classes.
 
 Let $V,V'$ be distinct irreducible representations of $G$, of respective
 dimensions say $n$ and $m$, and let $\pi,\pi'$ be the corresponding
-homomorphisms from $G$ to $GL_n,(\Bbb C), GL_m(\Bbb C)$. Then the only
-$G$-homomorphism from $V$ to $V'$ is the 0 map; but the other hand the
-proof of Maschke's Theorem shows that if $\mu$ is any $\Bbb C$-linear
-map from $V$ to $V'$, then $(1/ | G |)\sum_{g\in G}
+homomorphisms from $G$ to $GL_n,(\mathbf C), GL_m(\mathbf C)$. Then the
+only $G$-homomorphism from $V$ to $V'$ is the 0 map; but the other hand
+the proof of Maschke's Theorem shows that if $\mu$ is any $\mathbf
+C$-linear map from $V$ to $V'$, then $(1/ | G |)\sum_{g\in G}
 \pi'(g)\mu\pi(g^{-1})$ is a $G$-homomorphism $f$ and so must be 0.
 Taking $\mu$ to have matrix having 1 as its $ij$-entry and 0s everywhere
 else, for indices $i,j$ with $1\le i\le m,1\le j\le m$, we deduce that
@@ -95,6 +96,6 @@ $\sum_g \pi(g)_{jj} \overline{\pi'(g)}_{ii} = 0$ (by looking at the
 $ij$-entry of the matrix of $f$), where $\pi(g)_{ij}$ is the $ij$-entry
 of the matrix $\pi(g)$; summing over all indices $i,j$, we deduce that
 $\sum_g \chi_\pi(g) \overline{\chi_{\pi'}(g)} = 0$. We will deduce
-  further relations among the characters $\chi_\pi$ next time.
+further relations among the characters $\chi_\pi$ next time.
 
 \end{document}

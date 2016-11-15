@@ -7,9 +7,9 @@
 
 Continuing with the setup we ended with last time, let $V$ as before be
 the irreducible representation of $G$ corresponding to $\pi:G\rightarrow
-GL_n(\Bbb C)$ and consider what happens when we average over $G$ the
-linear map $\mu$ from $\Bbb C^n$ to itself with matrix having 1 as its
-$ij$-entry and 0 everywhere else. We must get a scalar map $f$ every
+GL_n(\mathbf C)$ and consider what happens when we average over $G$ the
+linear map $\mu$ from $\mathbf C^n$ to itself with matrix having 1 as
+its $ij$-entry and 0 everywhere else. We must get a scalar map $f$ every
 time, but now it need not be 0. If $i\ne j$, then the trace of $f$ must
 be the same as that of $\mu$, which is 0, so $f=0$ and we deduce as
 before that $\sum_{g\in G} \pi(g)_{ii} \overline{\pi(g)_{jj}} = 0$; but
@@ -17,30 +17,30 @@ now if $i=j$, then the trace of $\mu$ is 1, and so $f$ must have matrix
 $(1/n)I$. Taking traces and adding, we deduce that $(1/ | G |)\sum_{g\in
   G} \chi_pi(g)\overline{\chi_pi(g)} = 1$. To interpret this last
 relation and the one at the end of the last lecture, we recall some
-linear algebra over $\Bbb C$. The vector space $\Bbb C^n$ has a standard
-{\sl Hermitian form}, which attaches to the pair of vectors $v =
-(v_1,\ldots,v_n), w = (w_1,\ldots,w_n)$ the complex scalar $(v,w) = \sum
-v_i\overline{w_i}$. Like the dot product on $\Bbb R^n, (v,w)$ is linear
-in the first variable $v$ and positive definite in the sense that
-$(v,v)$ is a nonnegative real number for all $v\in\Bbb C^n$ and 0 only
-for $v=0$, but a difference is that $(v,w)$ is conjugate linear in the
-second variable $w$, so that $(v,\alpha w) = \overline{\alpha}(v,w)$ if
-$v,w\in\Bbb C^n,\alpha\in\Bbb C$. Now the set $C$ of complex-valued
-functions on $G$ that are constant on conjugacy classes is a
-finite-dimensional vector space over $\Bbb C$, of dimension equal to the
-number $m$ of conjugacy classes in $G$. The above results on characters
-show that {\sl this space has an orthonormal set of $m$ vectors with
-  respect to the Hermitian form $(c_1,c_2) = (1/ |G| )\sum_{g\in G}
-  c_1(g)\overline{c_2(g)}$, namely the characters $\chi_1,\ldots,\chi_m$
-  of the distinct irreducible representations of $G$}. This famous
-result is known as {\sl Schur orthogonality of the characters}. It
-implies that {\sl the $\chi_i$ form an orthonormal basis of $C$} (like
-any orthonormal set of $d$ vectors in a complex vector space of
-dimension $d$ with a Hermitian form). In particular, any complex
-fuinction on $G$ that is constant on conjugacy classes is uniquely a
-combination of irreducible characters. Moreover, as the trace of any
-matrix in block diagonal form with blocks $B_1,\ldots,B_r$ is the sum of
-the traces of the $B_i$, {\sl any direct sum $V$ of irreducible
+linear algebra over $\mathbf C$. The vector space $\mathbf C^n$ has a
+standard {\sl Hermitian form}, which attaches to the pair of vectors $v
+= (v_1,\ldots,v_n), w = (w_1,\ldots,w_n)$ the complex scalar $(v,w) =
+\sum v_i\overline{w_i}$. Like the dot product on $\mathbf R^n, (v,w)$ is
+linear in the first variable $v$ and positive definite in the sense that
+$(v,v)$ is a nonnegative real number for all $v\in\mathbf C^n$ and 0
+only for $v=0$, but a difference is that $(v,w)$ is conjugate linear in
+the second variable $w$, so that $(v,\alpha w) = \overline{\alpha}(v,w)$
+if $v,w\in\mathbf C^n,\alpha\in\mathbf C$. Now the set $C$ of
+complex-valued functions on $G$ that are constant on conjugacy classes
+is a finite-dimensional vector space over $\mathbf C$, of dimension
+equal to the number $m$ of conjugacy classes in $G$. The above results
+on characters show that {\sl this space has an orthonormal set of $m$
+  vectors with respect to the Hermitian form $(c_1,c_2) = (1/ |G|
+  )\sum_{g\in G} c_1(g)\overline{c_2(g)}$, namely the characters
+  $\chi_1,\ldots,\chi_m$ of the distinct irreducible representations of
+  $G$}. This famous result is known as {\sl Schur orthogonality of the
+  characters}. It implies that {\sl the $\chi_i$ form an orthonormal
+  basis of $C$} (like any orthonormal set of $d$ vectors in a complex
+vector space of dimension $d$ with a Hermitian form). In particular, any
+complex fuinction on $G$ that is constant on conjugacy classes is
+uniquely a combination of irreducible characters. Moreover, as the trace
+of any matrix in block diagonal form with blocks $B_1,\ldots,B_r$ is the
+sum of the traces of the $B_i$, {\sl any direct sum $V$ of irreducible
   representations $V_1,\ldots,V_r$ has as its character the sum of its
   characters on the $V_i$}. In fact, we can compute the multiplicity of
 any irreducible representation with character $\chi_i$ in $V$ as the
