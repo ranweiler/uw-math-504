@@ -1,0 +1,26 @@
+\input amstex
+\input amssym.def
+\loadmsbm
+\nopagenumbers
+\magnification=\magstep1
+\centerline{\bf SOLUTIONS TO HOMEWORK \#4, DUE 10/28}
+\bigskip
+1. First suppose that the matrix $M$ is the companion matrix $C(p)$ attached to a single monic polynomial $p$.  The minimal polynomial of $C(p)$ is $p$ itself, whence the same is true of its transpose $C(p^t)$, since a polynomial $q$ vanishes on a matrix $M$ if and only if it vanishes on $M^t$.  But a matrix in (the invariant factor version of) rational canonical form, having blocks the companion matrices of $p_1,\ldots,p_m$ with $p_1 | p_2 | \cdots p_m$, has minimal polynomial $p_m$, whence the degree of this polynomial equals the size of the matrix if and only if there is just one block.  Hence $C(p)$ is the only possible rational canonical form for $C(p)^t$, and $C(p)^t$ is similar to $C(p)$, as desired.  Now a matrix in block diagonal form with blocks $B_1,\ldots,B_m$ similar respectively to square matrices $C_1,\ldots C_m$, is easily seen to be similar to the block diagonal matrix with blocks $C_1,\ldots,C_m$, so the desired result now follows from the rational canonical form.
+\vskip .5in
+2. This follows at once from the rational canonical form in its invariant factor version:  since two polynomials $p_1,p_2$ in $K[x]$ are such that $p_1 | p_2$ in $K[x]$ if and only if $p_1 | p_2$ in
+$L[x]$ for $L$ a field containing $K$, it follows that the only possible rational canonical form over $L$ for a matrix over $K$ is the same as this form over $K$.
+\vskip .5in
+3. A projective module over any ring is a direct summand of a free module; over a PID $R$, any free module is torsion-free, since $R$ is an integral domain, so a finitely generated projective $R$-module cannot involve any proper quotients $R/(q)$ and must be a finite direct sum of copies of $R$.  Thus the finitely generated projective $R$-modules are exactly the free ones $R^m$ of finite rank.
+\vskip .5in
+4. If $M$ is free with basis $b_1,\ldots,b_n$, then I claim that $\bigwedge^k M$ is also free, with basis
+$b_{i_1}\wedge b_{i_2} \wedge\cdots\wedge b_{i_k}$, where the $i_j$ range over all indices between $1$ and $n$ with $i_1<i_2<\ldots<i_k$; in particular, the rank of this module is
+$${n\choose k}= n!/(k!(n-k)!)$$
+To see this, it is enough to show (as we did in class for the full tensor power $T^k M$) that an alternating $k$-linear function $f$ from $M\times\cdots M$ to another $R$-module $N$ is completely determined by the images $f(b_{i_1},\ldots,b_{i_k})$ of tuples of basis vectors with indices as above, and these images are arbitrary (so that any choice of them gives rise to a unique alternating $k$-linear map).  It is clear that $f(b_{i_1},\ldots,b_{i_k})$ is determined for *any* $k$-tuple of indices $i_j$ by the values of $f(b_{i_1},\ldots,b_{i_k})$ for $i_1<\ldots<i_k$, since then
+$f(b_{i_{\sigma(1)}},\ldots,b_{i_{\sigma(k)}})$ equals the sign of $\sigma$ times $f(b_{i_1},\ldots,b_{i_k})$ for any permutation $\sigma$ of $1,\ldots,k$, while $f(b_{i_1},\ldots,b_{i_k}) = 0$ whenever two indices $i_j$ are equal.  So it remains to show that any choice of $f(b_{i_1},\ldots,b_{i_k})$ for all indices with $i_1\ldots<i_k$ gives rise to an alternating multilinear $f$ defined on all of $M^k$.  This follows since a formula for $f$ is given by
+$f(m_1,\ldots,m_k) = \sum_{i_1<\ldots i_k} M_{i_1,\ldots i_k} f(b_{i_1},\ldots b_{i_k})$, where the
+matrix $M_{i_1,\ldots i_k}$ has its $j$th column consisting of the coefficients of $b_{i_1},\ldots b_{i_k}$ when $m_j$ is written as a combination of $b_1,\ldots b_n$.  That such an $f$ is alternating and
+$k$-linear follows from standard properties of determinants (over commutative rings).
+\vskip .5in
+5. Write the $\Bbb Z$-module $M$ as $F/N$ with $F$ a free $\Bbb Z$-module, and let $F'$ the free
+$\Bbb Q$-module (or vector space over $\Bbb Q$) on the same basis as $F$.  Then $F'/N$ contains $M$ and is divisible and thus injective over $\Bbb Z$, as desired.
+\end
