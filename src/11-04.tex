@@ -1,0 +1,101 @@
+\documentclass[10pt]{article}
+\usepackage{amsmath, amssymb}
+
+\begin{document}
+
+\section*{Math 504, 11/04}
+
+Now let $V$ be a (finite-dimensional) $G$-module with submodule $W$. We
+now make a fundamental assumption on our basefield $K$, namely that it
+has characteristic 0, and show that $W$ necessarily has a complement in
+$V$. To do this, let $W'$ be any vector space complement of $W$ in $V$
+and let $\pi:V\rightarrow W$ be the linear map that is the identity on
+$W$ and 0 on $W'$. Replacing $\pi$ by $\pi' = (1/n) \sum_g g\pi g^{-1}$,
+where $n$ is the order of $G$, we see that $g\pi' g^{-1} = \pi'$ for all
+$g\in G$, so that $\pi'$ is a $G$-homomorphism, which is still the
+identity on $W$. Its kernel will then be the $G$-module complement $U$
+to $W$ that we are looking for. Iterating this result we see that {\sl
+  every $G$-module over a field of characteristic 0, or more generally
+  of characteristic not dividing the order of $G$, is a direct sum of
+  irreducible modules}; another way to express this result is to say
+that every $G$-module is {\sl completely reducible} or {\sl semisimple}.
+This result, known as {\sl Maschke's Theorem}, fails over every field
+$K$ whose characteristic $p$ does divide the order of $G$. To see this,
+note that $G$ permutes the basis elements $g$ of $KG$, we see that the
+sum $\sum k_g$ of the coefficients $k_g$ of any element of $KG$ is
+preserved by $G$, whence the subspace $S = \{v = \sum k_g g \in KG: \sum
+k_g = 0\}$ is a $G$-submodule such that $G$ acts trivially on $KG/S$;
+but one easily checks that the only elements $\sum k_g g$ in $G$ on
+which $G$ acts trivially have $k_g = k_h$ for all $g,h\in G$. Thus if
+the characteristic of $K$ does not divide the order of $G$, the
+$K$-subspace spanned by $\sum g$ is a $G$-stable complement of $S$ in
+$KG$, but if the characteristic of $K$ does divide the order of $G$,
+then $S$ has no $G$-stable complement in $KG$.
+
+Returning to the case where the characteristic of $K$ does not divide
+the order of $G$, we now know that the group ring $KG$ is semisimple as
+a left module over itself, whence all results from the last two problems
+of this week's homework apply to it: $KG$ is the direct sum of finitely
+many minimal two-sided ideals $I$ and each $I$ is the direct sum of
+finitely many minimal left ideals $L_i$, any two them isomorphic (say to
+$L$) as left $I$-modules. Now bring Schur's Lemma into the picture: the
+ring $I'$ of $I$-homomorphisms from any $L_i$ to itself is a division
+ring $D$ that is independent of $i$. Regard $D$ as acting on $L_i$ on
+the {\sl right}, so that the product $xy$ of two such homomorphisms
+$x,y$ is taken to be the composition of $x$ and $y$ in that order. The
+ring $R$ of $I$-homomorphisms from all of $I$ to itself as a left module
+is then the ring $M_n(D)$ of $n\times n$ matrices over $D$, where $n$ is
+the number of minimal left ideals $L_i$. This is because any
+$I$-homomorphism $\pi$ is completely determined by the projection
+$p_j(\pi(L_i)$ of the image $\pi(L_i)$ to $L_j$ and this projection
+defines an isomorphism from $L$ to itself, which is given by an element
+of $D$. But any left module homomorphism from $I$ to itself is given by
+{\sl right} multiplication by an element of $I$ (this is true of any
+ring). Hence the ring $I'$ of all such homomorphisms is isomorphic to
+$I$ as an abelian group, but the product $xy$ of two elements of it
+equals the product $yx$ in $I$. We deduce that {\sl each $I$ is
+  isomorphic to the ring $M_n (D')$ of $n \times n$ matrices over $D'$,
+  the division ring obtained from $D$ by replacing the product $xy$ of
+  two elements of it by the product $yx$ in $D$. Up to isomorphism, the
+  only simple left $I$-module is $D^n$, the space of column vectors of
+  length $n$ over $D$}. This property holds of any ring $R$ such that
+every left $R$-module is projective; in that generality the above result
+is called the {\sl Artin-Wedderburn Theorem}. In our current setting, we
+see that $KG$ must be a finite direct sum of such matrix rings
+$M_{n_i}(D_i)$, where in addition each division ring $D_i$ is
+finite-dimensional over $K$ with $K$ in its center. If now we further
+assume that $K$ is algebraically closed, the only division ring $D_i$
+with $K$ in its center that is finite-dimensional over $K$ is $K$
+itself, since any element $x$ in such a ring is algebraic over $K$,
+whence it must lie in $K$. We conclude that {\sl in particular, the
+  complex group algebra $\mathbf CG$ of any finite group $G$ is a direct
+  sum of matrix rings over $\mathbf C$}. A left module over such ring is
+just the column vectors over $\mathbf C$ of the same size as one of its
+matrix ring factors, withe the other matrix factors acting by 0. Thus
+{\sl $G$ has only finitely many inequivalent irreducible representations
+  and the sum of the squares of their dimensions equals the order of
+  $G$} (since the only irreducible module over $M_n(\mathbf C)$ is
+$\mathbf C^n$ and the dimension of $M_n(\mathbf C)$ over $\mathbf C$ is
+$n^2$). We will determine the number of inequivalent representations of
+$G$ later.
+
+For now let's look at another example. Consider again the group $G$ of
+quaternion units. We know from last time that $G$ has a two-dimensional
+representation over $\mathbf C$, namely the ring $H$ of quaternions,
+which one easily checks is irreducible. Besides this $G$ has four
+inequivalent 1-dimensional representations, each trivially itrreducible;
+in all of them $-1\in G$ acts trivially, while each of $i$ and $j$ acts
+by $1$ or $-1$ independently. As the order 8 of $G$ is the sum
+$4+1+1+1+1$ of the squares of the dimensions of the irreducible
+representations found so far, we have found all of them. By way of an
+interesting contrast, look at the group algebra $\mathbf RG$ of this
+same group over the field $\mathbf R$ of real numbers. This time $H$
+remains irreducible, but is now four-dimensional over $\mathbf R$, while
+the remaining irreducible representations found above of course remain
+irreducible. Thus $\mathbf RG$, instead of being a sum of matrix rings
+over $\mathbf R$ or $\mathbf C$, is sum of four $1\times 1$ matrix rings
+over $\mathbf R$ plus another such ring over $H$ (it turns out that $H$
+is itself a division ring). This division ring can arise in real group
+algebras, but never in complex ones.
+
+\end{document}
